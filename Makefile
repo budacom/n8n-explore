@@ -27,6 +27,7 @@ tunnel: clean
 
 clean:
 	@echo "🧹 Cleaning up..."
+	@touch .env.local
 	@docker compose down
 	@rm -f .env.local
 	@echo "✅ Cleanup complete"
